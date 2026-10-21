@@ -4,26 +4,27 @@ import { PortfolioConfig } from '../types/github';
  * =====================================================================
  * CYBERPUNK 3D PORTFOLIO CONFIGURATION
  * =====================================================================
- * Single source of truth for portfolio settings.
  * Verified profile: https://github.com/abhishekpathak17052005
+ * Parsed exactly from user developer profile specifications.
  */
 
 export const PORTFOLIO_CONFIG: PortfolioConfig = {
   // Verified GitHub Username
   githubUsername: (import.meta.env.VITE_GITHUB_USERNAME as string) || 'abhishekpathak17052005',
 
-  // Verified Display Name
+  // Verified Display Name & Identity
   displayName: 'Abhishek Pathak',
+  pronouns: 'he/him',
 
-  // Cyberpunk Terminal Headline
-  headline: 'Full-Stack Software Engineer & Cyber-Systems Developer',
+  // Cyberpunk Terminal Role
+  headline: 'CYBERSECURITY DEVELOPER',
 
-  // Verified & Professional Biography
-  bio: 'Software engineer building intelligent web platforms, defensive cybersecurity tooling, and interactive 3D digital experiences. Developer behind Pragati, SpectraShield, ShikshaSetu, and RescueX.',
+  // Verified Bio
+  bio: 'Full-stack software engineer and cybersecurity developer specializing in AI-driven scam detection, defensive tooling, and interactive real-time 3D web applications.',
 
-  // Optional contact details (Do NOT invent fake emails; empty string hides email button)
-  email: '', 
-  location: 'Cyber-Grid',
+  // Verified Contact & Location
+  email: 'ap17052005@gmail.com',
+  location: 'Pune, Maharashtra, India',
 
   // Verified social and external links
   socialLinks: [
@@ -37,28 +38,58 @@ export const PORTFOLIO_CONFIG: PortfolioConfig = {
       label: 'LinkedIn',
       url: 'https://linkedin.com',
     },
+    {
+      platform: 'twitter',
+      label: 'X / Twitter',
+      url: 'https://twitter.com',
+    },
+    {
+      platform: 'email',
+      label: 'Email',
+      url: 'mailto:ap17052005@gmail.com',
+    },
   ],
 
   // Repositories prioritized in the Featured Projects section
-  // Matched case-insensitively against your verified public GitHub repositories
   featuredRepoNames: [
-    'Pragyan',
+    'PRAGYAN',
     'ShikshaSetu',
     'SpectraShield',
+    'Rescue-X-AI',
     'RescueX',
+    'CareerBridge',
+    'CarrerBridge',
     'Pragati',
-    'OriginX',
     'MailGuard',
-    'Cricscore',
     'PassGuard',
+    'Cricscore',
+    'OriginX',
   ],
 
-  // Verified Focus areas
+  // Verified custom project descriptions (used when repository description is empty on GitHub)
+  customRepoDescriptions: {
+    pragyan: 'AI-powered Career Guidance and Skill Development Platform',
+    shikshasetu: 'AI enabled learning platform for iGOT Karmayogi',
+    spectrashield: 'AI Scam & Phishing Detection System',
+    'rescue-x-ai': 'Emergency Response Android Application',
+    rescuex: 'Emergency Response Android Application',
+    careerbridge: 'AI Career Community Platform',
+    carrerbridge: 'AI Career Community Platform',
+    'portfolio-3d': 'This 3D GitHub Portfolio Website',
+    abhishekpathak17052005: 'Cyberpunk 3D GitHub Portfolio Website',
+    pragati: 'AI-Powered Student Growth, Internship & Placement Readiness Platform',
+    mailguard: 'Cybersecurity phishing email detection tool analyzing suspicious keywords and links',
+    passguard: 'Defensive password strength analysis and entropy evaluation tool',
+    cricscore: 'Blockchain Verified Cricket Tournament Score Management Platform',
+    'student-management-system-java': 'Console-based Student Management System built using Core Java',
+  },
+
+  // Focus areas for About & System specs
   focusAreas: [
-    'Full-Stack Architecture & Distributed Web Systems',
-    'Defensive Cybersecurity & Phishing Detection (MailGuard, PassGuard)',
-    'Real-time 3D Web Graphics (Three.js & React Three Fiber)',
-    'AI-Powered EdTech & Placement Readiness (Pragati, ShikshaSetu)',
+    'Defensive Cybersecurity & Phishing Detection (SpectraShield, MailGuard)',
+    'Real-time 3D Graphics & Holographic Canvas (Three.js & React Three Fiber)',
+    'AI-Driven EdTech Platforms (PRAGYAN, ShikshaSetu, Pragati)',
+    'Full-Stack Architecture & Cryptographic Systems (PassGuard, Cricscore)',
   ],
 
   // Organized by verified languages and technologies in your GitHub repositories
@@ -69,15 +100,15 @@ export const PORTFOLIO_CONFIG: PortfolioConfig = {
     },
     {
       category: 'Backend & Systems',
-      skills: ['Python', 'Java', 'Node.js', 'Express', 'REST APIs', 'PostgreSQL', 'MongoDB'],
+      skills: ['Python', 'Java', 'Node.js', 'Express', 'Kotlin', 'REST APIs', 'PostgreSQL', 'MongoDB'],
     },
     {
       category: 'Security & DevOps',
-      skills: ['Phishing Analysis', 'Password Strength Scoring', 'Git / GitHub CI', 'Docker', 'Linux / Bash'],
+      skills: ['AI Phishing Detection', 'Password Cryptography', 'Git / GitHub CI', 'Docker', 'Linux / Bash'],
     },
     {
       category: 'AI & Data Engineering',
-      skills: ['Python', 'Machine Learning Algorithms', 'Data Structures & Algorithms'],
+      skills: ['Python', 'Machine Learning Models', 'Data Structures & Algorithms'],
     },
   ],
 };

@@ -4,6 +4,7 @@ import { GitHubRepo } from '../../types/github';
 import { GlassPanel } from '../ui/GlassPanel';
 import { ProjectModal } from '../ui/ProjectModal';
 import { LANGUAGE_COLORS } from '../../services/githubApi';
+import { PORTFOLIO_CONFIG } from '../../config/portfolio';
 
 interface ProjectsSectionProps {
   repos: GitHubRepo[];
@@ -39,9 +40,10 @@ export function ProjectsSection({
 
     return baseList
       .filter((r) => {
+        const desc = r.description || PORTFOLIO_CONFIG.customRepoDescriptions?.[r.name.toLowerCase()] || '';
         const matchesSearch =
           r.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          (r.description && r.description.toLowerCase().includes(searchQuery.toLowerCase()));
+          desc.toLowerCase().includes(searchQuery.toLowerCase());
 
         const matchesLanguage =
           selectedLanguage === 'all' || r.language === selectedLanguage;
@@ -223,7 +225,9 @@ export function ProjectsSection({
 
                     {/* Description */}
                     <p className="text-slate-400 text-xs leading-relaxed line-clamp-3">
-                      {repo.description || 'Public GitHub repository codebase.'}
+                      {repo.description ||
+                        PORTFOLIO_CONFIG.customRepoDescriptions?.[repo.name.toLowerCase()] ||
+                        'Public GitHub repository codebase.'}
                     </p>
                   </div>
 

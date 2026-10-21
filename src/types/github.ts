@@ -72,11 +72,14 @@ export interface PortfolioConfig {
   bio: string;
   email?: string;
   location?: string;
+  pronouns?: string;
   socialLinks: PortfolioSocialLink[];
   featuredRepoNames: string[];
+  customRepoDescriptions?: Record<string, string>;
   prioritizedSkills: {
     category: string;
     skills: string[];
   }[];
   focusAreas: string[];
 }
+

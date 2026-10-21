@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ExternalLink, GitFork, Star, Terminal, Check, Globe } from 'lucide-react';
 import { GitHubRepo } from '../../types/github';
 import { LANGUAGE_COLORS } from '../../services/githubApi';
+import { PORTFOLIO_CONFIG } from '../../config/portfolio';
 
 interface ProjectModalProps {
   repo: GitHubRepo | null;
@@ -95,7 +96,9 @@ export function ProjectModal({ repo, onClose }: ProjectModalProps) {
 
               {/* Verified description */}
               <p className="text-slate-300 text-sm leading-relaxed mt-2">
-                {repo.description || 'No public repository description provided.'}
+                {repo.description ||
+                  PORTFOLIO_CONFIG.customRepoDescriptions?.[repo.name.toLowerCase()] ||
+                  'No public repository description provided.'}
               </p>
             </div>
 

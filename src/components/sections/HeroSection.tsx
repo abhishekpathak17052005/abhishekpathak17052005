@@ -33,19 +33,32 @@ export function HeroSection({ profile, currentUsername }: HeroSectionProps) {
             AT A TIME.
           </h1>
 
-          {/* Name & Headline */}
-          <div className="space-y-1">
-            <div className="flex items-center gap-3">
-              <span className="text-xl sm:text-2xl font-bold font-mono text-cyber-ice">
+          {/* Name, Role & Badges */}
+          <div className="space-y-2">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="text-2xl sm:text-3xl font-extrabold font-mono text-cyber-ice">
                 {displayName}
               </span>
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-cyber-violet/20 border border-cyber-violet/40 text-cyber-violet">
                 @{currentUsername || 'unconfigured'}
               </span>
+              {PORTFOLIO_CONFIG.pronouns && (
+                <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">
+                  {PORTFOLIO_CONFIG.pronouns}
+                </span>
+              )}
             </div>
-            <p className="text-base sm:text-lg font-mono text-cyber-cyan">
-              {PORTFOLIO_CONFIG.headline}
-            </p>
+
+            <div className="flex flex-wrap items-center gap-2.5">
+              <span className="inline-flex items-center px-3 py-1 rounded-md bg-cyber-cyan/15 border border-cyber-cyan/40 text-cyber-cyan font-mono text-xs font-bold tracking-wider shadow-neon-cyan">
+                {PORTFOLIO_CONFIG.headline}
+              </span>
+              {PORTFOLIO_CONFIG.location && (
+                <span className="text-xs font-mono text-slate-400">
+                  📍 {PORTFOLIO_CONFIG.location}
+                </span>
+              )}
+            </div>
           </div>
 
           {/* Verified Biography */}
