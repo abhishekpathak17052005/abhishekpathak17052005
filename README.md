@@ -1,126 +1,106 @@
-# ⚡ CYBERPUNK 3D GITHUB DEVELOPER PORTFOLIO
+# ⚡ Abhishek Pathak (@abhishekpathak17052005)
+### Full-Stack Software Engineer & Cyber-Systems Developer
 
-A production-quality, futuristic 3D developer portfolio website connected to real-time GitHub data, powered by React 18, TypeScript, Three.js, React Three Fiber, Drei, Tailwind CSS, and Framer Motion.
+<div align="center">
 
----
+[![Explore 3D Portfolio](https://img.shields.io/badge/🌐%20EXPLORE%20MY%203D%20PORTFOLIO-00E5FF?style=for-the-badge&logo=three.js&logoColor=050713)](https://abhishekpathak17052005.vercel.app/)
 
-## 🚀 Key Features
+<!-- 
+NOTE: If you have deployed your portfolio to a custom domain, GitHub Pages, or a different Vercel URL, 
+simply update the link above with your live URL:
+Example: https://your-portfolio-name.vercel.app
+-->
 
-- **Genuine Real-Time 3D Environment**: Procedural rotating holographic energy core, concentric orbital rings with active satellite beacons, depth particle field with cyan and violet accents, and smooth pointer parallax.
-- **Direct Live GitHub REST API Integration**:
-  - Live public profile metrics (public repos, followers, following).
-  - Aggregated stars and forks across fetched public repositories (strictly labeled).
-  - Verified language distribution breakdown derived directly from repository metadata.
-  - Live activity feed showing recently updated codebases.
-- **Interactive Repository Matrix**:
-  - Featured projects curated from your configuration.
-  - Full repository directory with real-time name and description filtering.
-  - Language filtering and sorting by stars or recently updated.
-  - Interactive project detail modal with repository stats, tags, direct links, and one-click terminal clone commands.
-- **Single Configuration Hub**:
-  - Edit your settings in one place: `src/config/portfolio.ts`.
-  - Supports environment variable `VITE_GITHUB_USERNAME`.
-  - Polished interactive setup terminal modal when a username is not yet configured or when clicked in the navbar.
-- **Cyberpunk Holographic Design System**:
-  - Tailored color palette: Deep navy background (`#050713`), electric cyan (`#00E5FF`), neon violet (`#8B5CF6`), and icy blue-white.
-  - Subtle scanlines, glassmorphism blur panels, cyber corner cutouts, and neon glows.
-- **Performance & Accessibility**:
-  - Zero fabricated stats, streaks, or fake percentages.
-  - Respects GitHub REST API rate limits with in-memory and local caching (15-min TTL).
-  - Graceful WebGL fallback for older hardware or when JavaScript 3D is unavailable.
-  - Supports `prefers-reduced-motion` with simplified camera and particle settings.
-  - Full keyboard accessibility (ESC to close modals, tab-indexed interactive elements).
+**[🚀 Launch 3D Portfolio Universe](https://abhishekpathak17052005.vercel.app/)** • **[Explore Projects](#-featured-public-repositories)** • **[GitHub Profile](https://github.com/abhishekpathak17052005)**
+
+</div>
 
 ---
 
-## 🛠️ Technology Stack
+## 🌌 About Me
 
-| Layer | Technology |
+Hi there! 👋 I am **Abhishek Pathak**, a software engineer passionate about building high-performance web systems, defensive cybersecurity tooling, and interactive 3D graphics with Three.js and React.
+
+- 🔭 **Current Focus**: Real-time 3D web environments, distributed full-stack architecture, and defensive security.
+- 💻 **Core Languages**: TypeScript, Python, JavaScript, Java.
+- 🛡️ **Cybersecurity**: Phishing email detection ([MailGuard](https://github.com/abhishekpathak17052005/MailGuard)), password strength scoring ([PassGuard](https://github.com/abhishekpathak17052005/PassGuard)).
+- ⚡ **Interactive WebGL**: Procedural 3D digital universe built with React Three Fiber, Drei, and Three.js.
+
+---
+
+## 🛠️ Verified Technology Stack
+
+| Domain | Technologies |
 |---|---|
-| **Framework** | React 18, TypeScript (Strict) |
-| **Bundler & Tooling** | Vite 5 |
-| **3D Graphics** | Three.js, `@react-three/fiber`, `@react-three/drei` |
-| **Styling & UI** | Tailwind CSS, Custom Cyberpunk CSS Utilities |
-| **Motion & Transitions**| `framer-motion` |
-| **Icons** | `lucide-react` |
-| **Data Engine** | GitHub REST API v3 (Public Endpoints, Zero Access Token Required) |
+| **Frontend & Creative** | TypeScript, JavaScript, React 18, Three.js, React Three Fiber, Drei, Tailwind CSS, HTML5/CSS3 |
+| **Backend & Systems** | Python, Java, Node.js, Express, REST APIs, PostgreSQL, MongoDB |
+| **Security & Systems** | Defensive Phishing Analysis, Password Cryptography, Git / GitHub CI, Docker, Linux |
+| **Interactive 3D Engine** | WebGL 2.0, Procedural Wireframe Shaders, Particle Systems, Pointer Parallax |
 
 ---
 
-## ⚙️ Configuration
+## 🚀 Featured Public Repositories
 
-All personal and theme configurations are centralized in:
+Directly synchronized from verified GitHub repositories:
 
-📁 [`src/config/portfolio.ts`](./src/config/portfolio.ts)
-
-```typescript
-export const PORTFOLIO_CONFIG = {
-  // Set your GitHub username here or use VITE_GITHUB_USERNAME in .env
-  githubUsername: import.meta.env.VITE_GITHUB_USERNAME || 'abhishekpathak17052005',
-
-  // Fallback Display Name
-  displayName: 'Abhishek Pathak',
-
-  // Headline & Bio
-  headline: 'Full-Stack Engineer & Systems Architect',
-  bio: 'Engineering high-performance web systems...',
-
-  // Optional Contact & Social Links
-  email: '', // Leave empty string if you don't want an email button
-  socialLinks: [
-    { platform: 'github', label: 'GitHub Profile', url: 'https://github.com/abhishekpathak17052005' },
-    { platform: 'linkedin', label: 'LinkedIn', url: 'https://linkedin.com' },
-  ],
-
-  // Repositories to pin in the Featured section (case-insensitive name match)
-  featuredRepoNames: [
-    'Pragyan',
-    'ShikshaSetu',
-    'SpectraShield',
-    'RescueX',
-    'OriginX',
-  ],
-};
-```
+1. **[Pragati](https://github.com/abhishekpathak17052005/Pragati)** (`TypeScript`)
+   - *AI-Powered Student Growth, Internship & Placement Readiness Platform.*
+2. **[SpectraShield](https://github.com/abhishekpathak17052005/SpectraShield)** (`TypeScript`)
+   - *Cyber-defense and security architecture suite.*
+3. **[ShikshaSetu](https://github.com/abhishekpathak17052005/ShikshaSetu)** (`Python`)
+   - *Next-generation educational bridge and learning system.*
+4. **[Pragyan](https://github.com/abhishekpathak17052005/Pragyan)** (`TypeScript`)
+   - *Intelligent full-stack application engine.*
+5. **[RescueX](https://github.com/abhishekpathak17052005/RescueX)** (`TypeScript`)
+   - *Emergency response and incident coordination system.*
+6. **[MailGuard](https://github.com/abhishekpathak17052005/MailGuard)** (`Python`)
+   - *Cybersecurity phishing email detection tool analyzing suspicious keywords and links.*
+7. **[PassGuard](https://github.com/abhishekpathak17052005/PassGuard)** (`Python`)
+   - *Defensive password strength analysis and entropy evaluation tool.*
+8. **[Cricscore](https://github.com/abhishekpathak17052005/Cricscore)** (`JavaScript`)
+   - *Blockchain-verified tournament score management platform.*
+9. **[OriginX](https://github.com/abhishekpathak17052005/OriginX)** (`TypeScript`)
+   - *Modern web systems platform and architecture.*
+10. **[Student-Management-System-Java](https://github.com/abhishekpathak17052005/Student-Management-System-Java)** (`Java`)
+    - *Console-based student management system built with Core Java.*
 
 ---
 
-## 💻 Local Development
+## 🎮 Running the 3D Portfolio Locally
 
-### 1. Install Dependencies
+This repository contains the complete production source code for the **Cyberpunk 3D Developer Portfolio**:
+
 ```bash
+# 1. Clone repository
+git clone https://github.com/abhishekpathak17052005/abhishekpathak17052005.git
+cd abhishekpathak17052005
+
+# 2. Install dependencies
 npm install
-```
 
-### 2. Start Local Development Server
-```bash
+# 3. Start local development server
 npm run dev
-```
-The server will boot at `http://localhost:5173/`.
 
-### 3. Production Build
-```bash
+# 4. Production build
 npm run build
 ```
-Type checks and bundles the production assets into `dist/`.
 
 ---
 
-## 🌐 Deployment Instructions
+## 🌐 Deploying to Live Production
+
+To deploy this 3D portfolio to the web for free in 60 seconds:
 
 ### Deploy to Vercel (Recommended)
-1. Push your repository to GitHub.
-2. Sign in to [Vercel](https://vercel.com/) and click **Add New Project**.
-3. Select your repository.
-4. Keep the default settings:
-   - Framework Preset: **Vite**
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-5. *(Optional)* Add environment variable:
-   - Key: `VITE_GITHUB_USERNAME`
-   - Value: `your-github-username`
-6. Click **Deploy**.
+1. Go to [vercel.com/new](https://vercel.com/new).
+2. Select and import `abhishekpathak17052005/abhishekpathak17052005`.
+3. Framework preset: **Vite** (detected automatically).
+4. Build command: `npm run build`, Output directory: `dist`.
+5. Click **Deploy**.
+6. Once deployed, if your URL differs from `https://abhishekpathak17052005.vercel.app/`, replace the URL at the top of this README.
 
-### Deploy to GitHub Pages
-1. In `vite.config.ts`, set `base: '/<repository-name>/'`.
-2. Add the `gh-pages` script or set up GitHub Actions with the official Vite workflow (`actions/deploy-pages`).
+---
+
+<div align="center">
+  <sub>Engineered by <strong>Abhishek Pathak</strong> • Built with Three.js, React & Tailwind CSS</sub>
+</div>
